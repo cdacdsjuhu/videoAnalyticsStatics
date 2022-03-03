@@ -1,6 +1,36 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-  <div th:replace="includes/header :: client_header"></div>
+<html>
+  <div>
+    <head>
+      <meta charset="UTF-8" />
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+      <link rel="shortcut icon" type="image/x-icon" th:href=@{/imamges/logo.ico}
+      /> <link rel="stylesheet" th:href=@{/css/main.css}> <link rel="stylesheet"
+      th:href=@{/css/w3.css}> <link rel="stylesheet"
+      th:href=@{/css/top_navbar.css}>
+      <script type="text/javascript" th:src="@{/js/w3.js}"></script>
+      <script type="text/javascript" th:src="@{/js/custom.js}"></script>
+      <link rel="stylesheet" th:href=@{/css/bootstrap.css}> <link
+      rel="stylesheet" th:href=@{/css/bootstrap-datepicker3.css} />
+
+      <title>Video Analytics</title>
+    </head>
+
+    <div class="w3-teal">
+      <div class="w3-container">
+        <img id="logo" alt="Logo" th:src=@{/images/logo.jpg}>
+        <!-- <img id="logo" alt="Logo" src="/images/logo.jpg"> -->
+        <h1 id="headding">Intelligent Video Surveillance and Analytics</h1>
+      </div>
+    </div>
+
+    <!-- Top Nav Bar -->
+    <div class="navbar1">
+      <a th:href="@{/login}">Home</a>
+      <a th:href="@{/aboutus}">About Us</a>
+      <a th:href="@{/contactus}">Contact Us</a>
+    </div>
+  </div>
   <div class="container" id="main-content">
     <div class="col-lg-8 col-sm-12 top1">
       <div class="col-md-12 col-xs-12">
