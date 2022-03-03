@@ -1,0 +1,9 @@
+#recordedVideoSectionId {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galary {
+    flex: 25%;
+    padding: 0.1em;
+}

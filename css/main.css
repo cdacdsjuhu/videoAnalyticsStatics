@@ -1,0 +1,98 @@
+.link {
+	color: blue;
+}
+
+#logout {
+    /* margin-left: 60%; */
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#logout:hover {
+    /* margin-left: 60%; */
+    background-color: #f54c4c;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#logo {
+    width: 135px;
+    padding: 2px;
+    border-style: inset;
+    margin-left: -1%;
+    height: 100px;
+}
+
+#headding {
+    /* margin-left: 8%;
+    position: absolute;
+    margin-top: -6%;
+    font-size: 400%; */
+    margin-left: 10%;
+    position: absolute;
+    margin-top: -6%;
+    font-size: 250%;
+}
+
+#user {
+    color: #e6f568;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: -2%;
+}
+
+#main-content {
+    /* position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin:0 auto; /* this will center the page */
+    width:960px; /*  use your width here */
+    margin-top: 1%;
+}
+
+#analytics-main-content {
+    margin:0 auto; /* this will center the page */
+    width:1300px; /*  use your width here */
+    margin-top: 1%;
+}
+
+.top1{
+    margin-top: 0.5cm;
+}
+
+.quadrat {
+  
+  -webkit-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Safari 4+ */
+  -moz-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Fx 5+ */
+  -o-animation: NAME-YOUR-ANIMATION 1s infinite;  /* Opera 12+ */
+  animation: NAME-YOUR-ANIMATION 1s infinite;  /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%, 25% {
+    background-color: None;
+  }
+  26%, 50% {
+    background-color: #e50000;
+  }
+  51%, 75% {
+    background-color: None;
+  }
+  76%, 100% {
+    background-color: #e50000;
+  }
+}
