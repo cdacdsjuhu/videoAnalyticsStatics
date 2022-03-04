@@ -16,6 +16,79 @@
       <title>Video Analytics</title>
     </head>
 
+    <style>
+      #bliink {
+        font-size: 20px;
+        font-weight: bold;
+        color: #2d38be;
+        transition: 0.5s;
+      }
+
+      /* Optional: show position indicator in red */
+      ::-webkit-scrollbar-thumb {
+        background: #ff0000;
+      }
+
+      .blink_text_sup {
+        animation-name: example;
+        animation: 1s example linear infinite;
+        -webkit-animation: 1s example linear infinite;
+        -moz-animation: 1s example linear infinite;
+
+        color: black;
+      }
+      @keyframes example {
+        0% {
+          color: red;
+        }
+        25% {
+          color: yellow;
+        }
+        50% {
+          color: blue;
+        }
+        100% {
+          color: green;
+        }
+      }
+
+      @-moz-keyframes blinker {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes blinker {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes blinker {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
     <div class="w3-teal">
       <div class="w3-container">
         <img id="logo" alt="Logo" src="./images/logo.jpg" />
@@ -33,13 +106,12 @@
   </div>
   <div class="container" id="main-content">
     <div class="row">
-      <div class="panel panel-success">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            <div style="color: blue">
-              Please fill the form for registration of Intelligent Video
-              Surveillance and Video Analytics Webinar on 23 March 2022
-            </div>
+      <div class="alert alert-success" role="alert">
+        <div>
+          <h3 style="color: blue" id="bliink">
+            <span class="blink_text_sup"><sup>New</sup></span>
+            Please fill the form for registration of Intelligent Video
+            Surveillance and Video Analytics Webinar on 23 March 2022
             <a
               href="https://forms.gle/anAMec2bYZNkrmfQ8"
               target="_blank"
